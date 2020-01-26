@@ -12,6 +12,8 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link href="//fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +27,107 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+
+				<!-- Slide 1 -->
+				<section>
+					<h2 style="text-align: center;">Stretched-grid, CMake, and Continuous Integration Developments in GCHP</h2>
+					<h4 style="text-align: center; padding: 0; margin: 0;">Liam Bindle</h4>
+					<h4 style="text-align: center; padding: 0; margin: 0;">2020-01-29</h4>
+				</section>
+
+				<!-- Slide 2 -->
+				<section>
+					<div style="width: 320px; position: absolute; left: 0px; z-index: 2;">
+						<h2>Stretched-grid</h2>
+						<ul>
+							<li>Transform of the cube‑sphere's grid-boxes</li>
+							<li><strong>Nimble control</strong> over the target region and resolution</li>
+							<li><strong>Easy to implement in GCHP</strong> because MAPL 2.0 and FV3 already support it</li>
+						</ul>
+					</div>				
+					<div style="width: 760px; position: absolute; right: 0px; top: 0px; z-index: 1;">
+						<video data-autoplay loop data-background-video-muted src="https://presentation-material.s3.us-east-2.amazonaws.com/Stretch-MR.webm"></video>
+					</div>
+				</section>
+				
+				<!-- Slide 3 -->
+				<section data-background-video="https://presentation-material.s3.us-east-2.amazonaws.com/California-MR.webm" data-background-video-loop data-background-video-muted data-background-size="contain">
+				</section>
+
+				<!-- Slide 4 -->
+				<section data-background-video="https://presentation-material.s3.us-east-2.amazonaws.com/China-MR.webm" data-background-video-loop data-background-video-muted data-background-size="contain">
+				</section>
+
+				<!-- Slide 5 -->
+				<section>
+					<div style="width: 500px; position: absolute; left: 0px;">
+						<h2>Validation</h2>
+						<ul>
+							<li>Added stretched-grid support to gcpy’s benchmarking</li>
+							<li>This will allow me to <strong>compare high resolution GCHP simulations to stretched-grid simulations</strong></li>
+							<li>This work is in progress</li>
+						</ul>
+					</div>
+					
+					<div style="height: 600px; position: absolute; right: 0px; top: 0px;">
+						<img data-src="img/benchmarking.png">
+					</div>
+				</section>
+
+				<!-- Slide 6 -->
+				<section>
+					<h1 style="text-align: center;">CMake</h1>
+				</section>
+
+				<!-- Slide 7 -->
+				<section>
+					<div style="width: 400px; position: absolute; left: 0px;">
+						<h2>CMake Support</h2>
+						<ul>
+							<li><strong>Complete overhaul</strong> of the build‑system</li>
+							<li>GEOS-Chem added CMake support in October (version 12.6)</li>
+							<li>MAPL 2.0 and future releases <strong>only supports CMake</strong></li>
+							<li>In GCHPctm <strong>we use existing CMakeLists</strong> in GEOS-Chem, MAPL, and our 6 other internal dependencies</li>
+						</ul>
+					</div>
+					
+					<div style="width: 500px; position: absolute; right: 0px; top: 75px;">
+						<img data-src="img/cmake-pr.png">
+					</div>
+				</section>
+
+				<!-- Slide 8 -->
+				<section>
+					<img data-src="img/cmake-instructions.png">
+				</section>
+
+				<!-- Slide 9 -->
+				<section>
+					<h1 style="text-align: center;">Continuous Integration</h1>
+				</section>
+				
+				<!-- Slide 10 -->
+				<section>
+					<div style="width: 400px; position: absolute; left: 0px;">
+						<h2>Validation</h2>
+						<ul>
+							<li><strong>CI pipelines were added</strong> to GEOS-Chem and GCHP</li>
+							<li>A pre-release versioning scheme is being discussed</li>
+							<li><strong>Future work should add runtime tests</strong> and expand the build matrix</li>
+						</ul>
+					</div>
+					
+					<div style="width: 450px; position: absolute; right: 0px; top: 0px;">
+						<img data-src="img/ci.png">
+					</div>
+				</section>
+
+				<!-- Slide 10 -->
+				<section>
+					<h2 style="text-align: center;">Thanks!</h2>
+				</section>
+
 			</div>
 		</div>
 

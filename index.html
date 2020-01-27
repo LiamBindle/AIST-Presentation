@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>AIST 2020-01-29</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -41,9 +41,9 @@
 					<div style="width: 320px; position: absolute; left: 0px; z-index: 2;">
 						<h2>Stretched-grid</h2>
 						<ul>
-							<li>Transform of the cube‑sphere's grid-boxes</li>
+							<li>Transform to the cube‑sphere's grid-boxes</li>
 							<li><strong>Nimble control</strong> over the target region and resolution</li>
-							<li><strong>Easy to implement in GCHP</strong> because MAPL 2.0 and FV3 already support it</li>
+							<li><strong>Easy to implement in GCHP</strong> because MAPL 2.0 and FV3 support it</li>
 						</ul>
 					</div>				
 					<div style="width: 760px; position: absolute; right: 0px; top: 0px; z-index: 1;">
@@ -62,10 +62,10 @@
 				<!-- Slide 5 -->
 				<section>
 					<div style="width: 500px; position: absolute; left: 0px;">
-						<h2>Validation</h2>
+						<h2>SG Validation</h2>
 						<ul>
-							<li>Added stretched-grid support to gcpy’s benchmarking</li>
-							<li>This will allow me to <strong>compare high resolution GCHP simulations to stretched-grid simulations</strong></li>
+							<li>Added stretched-grid support to GCPy benchmarking</li>
+							<li>This lets me <strong>compare high resolution GCHP simulations to stretched-grid simulations</strong></li>
 							<li>This work is in progress</li>
 						</ul>
 					</div>
@@ -87,8 +87,8 @@
 						<ul>
 							<li><strong>Complete overhaul</strong> of the build‑system</li>
 							<li>GEOS-Chem added CMake support in October (version 12.6)</li>
-							<li>MAPL 2.0 and future releases <strong>only supports CMake</strong></li>
-							<li>In GCHPctm <strong>we use existing CMakeLists</strong> in GEOS-Chem, MAPL, and our 6 other internal dependencies</li>
+							<li>MAPL 2.0 and future releases <strong>only support CMake</strong></li>
+							<li>In GCHPctm <strong>we use existing CMakeLists</strong> in GEOS-Chem, MAPL, and 6 other internal dependencies</li>
 						</ul>
 					</div>
 					
@@ -110,7 +110,7 @@
 				<!-- Slide 10 -->
 				<section>
 					<div style="width: 400px; position: absolute; left: 0px;">
-						<h2>Validation</h2>
+						<h2 style="font-size: 1.2em;">Continuous Integration</h2>
 						<ul>
 							<li><strong>CI pipelines were added</strong> to GEOS-Chem and GCHP</li>
 							<li>A pre-release versioning scheme is being discussed</li>
